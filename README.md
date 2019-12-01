@@ -1,6 +1,6 @@
 # gatsby-plugin-sharp-exif
 
-[![npm](https://img.shields.io/npm/v/<%= props.name %>)](https://www.npmjs.com/package/<%= props.name %>)  ![GitHub](https://img.shields.io/github/license/<%= props.github %>)
+[![npm](https://img.shields.io/npm/v/gatsby-plugin-sharp-exif)](https://www.npmjs.com/package/gatsby-plugin-sharp-exif)  ![GitHub](https://img.shields.io/github/license/thomasgassmann/gatsby-plugin-sharp-exif)
 
 Gatsby Plugin to extract EXIF data from images, compatible with gatsby-plugin-sharp
 
