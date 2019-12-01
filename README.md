@@ -28,7 +28,7 @@ You can also specify options
 module.exports = {
   plugins: [
     {
-      resolve: '<%= props.name %>',
+      resolve: 'gatsby-plugin-sharp-exif',
       options: {
 
       }
