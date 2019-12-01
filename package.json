@@ -1,0 +1,41 @@
+{
+    "name": "gatsby-plugin-sharp-exif",
+    "version": "0.0.0",
+    "description": "Gatsby Plugin to extract EXIF data from images, compatible with gatsby-plugin-sharp",
+    "main": "index.js",
+    "scripts": {
+        "develop": "babel -w src --out-dir . --ignore **/__tests__",
+        "build": "babel src --out-dir . --ignore **/__tests__",
+        "prepare": "cross-env NODE_ENV=production npm run build"
+    },
+    "files": [
+        "/*.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thomasgassmann/gatsby-plugin-sharp-exif.git"
+    },
+    "keywords": [
+        "gatsby",
+        "gatsby-plugin",
+        "exif"
+    ],
+    "author": "thomasgassmann",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thomasgassmann/gatsby-plugin-sharp-exif/issues"
+    },
+    "homepage": "https://github.com/thomasgassmann/gatsby-plugin-sharp-exif#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.5.0",
+        "@babel/core": "^7.5.0",
+        "babel-preset-gatsby-package": "^0.2.0",
+        "cross-env": "^5.2.0",
+        "eslint": "^6.7.2",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.18.2"
+    },
+    "peerDependencies": {
+        "gatsby": "^2.0.0"
+    }
+}
