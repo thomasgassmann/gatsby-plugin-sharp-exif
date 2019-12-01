@@ -34,6 +34,7 @@
         "prettier": "^1.19.1"
     },
     "peerDependencies": {
-        "gatsby": "^2.0.0"
+        "gatsby": "^2.0.0",
+        "gatsby-plugin-sharp": "^2.3.4"
     }
 }
