@@ -38,6 +38,7 @@
         "gatsby-plugin-sharp": "^2.3.4"
     },
     "dependencies": {
+        "@babel/runtime": "^7.7.4",
         "fast-exif": "^1.0.1"
     }
 }
