@@ -21,17 +21,3 @@ module.exports = {
   ]
 }
 ```
-
-You can also specify options
-
-```js
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-plugin-sharp-exif',
-      options: {
-
-      }
-  ]
-}
-```
