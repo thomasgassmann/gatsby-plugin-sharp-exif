@@ -29,8 +29,17 @@ Then just query the EXIF data as part of the `ImageSharp` type:
       node {
         fields {
           exif {
-            image {
-              Make
+            gps {
+              longitude
+              latitude
+            }
+            meta {
+              dateTaken
+            }
+            raw {
+              image {
+                Make
+              }
             }
           }
         }

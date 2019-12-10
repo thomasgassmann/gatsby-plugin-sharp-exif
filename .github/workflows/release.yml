@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Build
+        run: npm run build
+
       - uses: primer/publish@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
