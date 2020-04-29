@@ -21,3 +21,31 @@ test('test DMS to DD conversion', () => {
     }
   });
 });
+
+test('empty coordinates', () => {
+  const input = {};
+  expect(transformExifToNodeData(input)).toStrictEqual({
+    raw: input,
+    meta: {
+      dateTaken: undefined
+    },
+    gps: {
+      longitude: null,
+      latitude: null
+    }
+  })
+});
+
+test('metadata extraction', () => {
+  const input = { exif: { DateTimeOriginal: 961198800 } };
+  expect(transformExifToNodeData(input)).toStrictEqual({
+    raw: input,
+    meta: {
+      dateTaken: input.exif.DateTimeOriginal
+    },
+    gps: {
+      longitude: null,
+      latitude: null
+    }
+  });
+});
