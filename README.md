@@ -6,8 +6,18 @@ Gatsby Plugin to extract EXIF data from images, compatible with gatsby-plugin-sh
 
 ## Install
 
-```sh
-npm i --save gatsby-plugin-sharp-exif
+Install `gatsby-plugin-sharp-exif`...
+
+...using [`yarn`](https://yarnpkg.com/en/package/jest):
+
+```bash
+yarn add --dev jest
+```
+
+...or [`npm`](https://www.npmjs.com/):
+
+```bash
+npm install --save-dev jest
 ```
 
 ## How to use
