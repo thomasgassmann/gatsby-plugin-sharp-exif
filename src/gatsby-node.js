@@ -1,11 +1,9 @@
 import { read } from 'fast-exif';
 
 function convertDMSToDD(dms, positiveDirection) {
-  const factor = 60;
   const res = dms
     .map((item, i) => {
-      const divisor = factor * i;
-      return divisor === 0 ? item : item / divisor;
+      return item / Math.pow(60, i);
     })
     .reduce((a, b) => a + b);
   return positiveDirection ? res : -res;
