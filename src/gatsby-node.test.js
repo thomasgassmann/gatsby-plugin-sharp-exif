@@ -16,8 +16,8 @@ test('test DMS to DD conversion', () => {
       dateTaken: undefined
     },
     gps: {
-      longitude: 9.284583333333332,
-      latitude: 48.01183333333333
+      longitude: 8.896708333333333,
+      latitude: 47.56539444444444
     }
   });
 });
