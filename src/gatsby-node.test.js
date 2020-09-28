@@ -1,4 +1,4 @@
-import { transformExifToNodeData } from './gatsby-node';
+import { transformExifToNodeData } from './common';
 
 test('test DMS to DD conversion', () => {
   const input = {
