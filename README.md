@@ -11,13 +11,13 @@ Install `gatsby-plugin-sharp-exif`...
 ...using [`yarn`](https://yarnpkg.com):
 
 ```bash
-yarn add --dev jest
+yarn add --dev gatsby-plugin-sharp-exif
 ```
 
 ...or [`npm`](https://www.npmjs.com/):
 
 ```bash
-npm install --save-dev jest
+npm install --save-dev gatsby-plugin-sharp-exif
 ```
 
 ## How to use
