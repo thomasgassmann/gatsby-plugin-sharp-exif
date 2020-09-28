@@ -9,7 +9,7 @@ function convertDMSToDD(dms, positiveDirection) {
   return positiveDirection ? res : -res;
 }
 
-export function transformExifToNodeData(exifData) {
+function transformExifToNodeData(exifData) {
   const gps = { longitude: null, latitude: null };
 
   if (
