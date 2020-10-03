@@ -1,4 +1,3 @@
 node_modules/
-gatsby-node.js
-gatsby-node.test.js
-index.js
+*.js
+!/src/*.js
