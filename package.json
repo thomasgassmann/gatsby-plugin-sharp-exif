@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-sharp-exif",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Gatsby Plugin to extract EXIF data from images, compatible with gatsby-plugin-sharp",
   "main": "index.js",
   "scripts": {
@@ -36,8 +36,8 @@
     "prettier": "^1.19.1"
   },
   "peerDependencies": {
-    "gatsby": "^2.0.0",
-    "gatsby-plugin-sharp": "^2.3.4"
+    "gatsby": "^4.10.1",
+    "gatsby-plugin-sharp": "^4.10.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.7.4",
