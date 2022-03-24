@@ -3,6 +3,7 @@ import { transformExifToNodeData } from './common';
 
 export function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions;
+  console.log("node", JSON.stringify(node));
   if (node.internal.type === 'ImageSharp') {
     const parent = getNode(node.parent);
 
