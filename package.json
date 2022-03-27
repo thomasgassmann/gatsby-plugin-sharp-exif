@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-sharp-exif",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Gatsby Plugin to extract EXIF data from images, compatible with gatsby-plugin-sharp",
   "main": "index.js",
   "scripts": {

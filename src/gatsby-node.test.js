@@ -1,4 +1,4 @@
-import {extractExifData, transformExifToNodeData} from "./common";
+import { extractExifData, transformExifToNodeData } from "./common";
 
 test("empty coordinates", () => {
   const input = {};

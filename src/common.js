@@ -22,4 +22,3 @@ export function extractExifData(absolutePath) {
     return transformExifToNodeData(exifData);
   });
 }
-
