@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-sharp-exif",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Gatsby Plugin to extract EXIF data from images, compatible with gatsby-plugin-sharp",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "exif"
+    "exif",
+    "iptc"
   ],
   "author": "thomasgassmann",
   "license": "MIT",
@@ -41,6 +42,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.7.4",
-    "fast-exif": "^1.0.1"
+    "exifr": "^7.1.3"
   }
 }

@@ -1,22 +1,23 @@
-import { read } from 'fast-exif';
 import { transformExifToNodeData } from './common';
+import exifr from "exifr";
+
+export function extractExifData (absolutePath) {
+  return exifr.parse(absolutePath, true).then((exifData) => {
+    return transformExifToNodeData(exifData)
+  })
+}
 
 export function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions;
   if (node.internal.type === 'ImageSharp') {
     const parent = getNode(node.parent);
 
-    read(parent.absolutePath)
-      .then(exifData => {
-        if (!exifData) {
-          console.warn(`Could not read exif of ${parent.absolutePath}`);
-          return;
-        }
-
+    extractExifData(parent.absolutePath)
+      .then(nodeData => {
         createNodeField({
           node,
           name: 'exif',
-          value: transformExifToNodeData(exifData)
+          value: nodeData
         });
       })
       .catch(err => console.error(err));

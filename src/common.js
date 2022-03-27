@@ -1,34 +1,19 @@
-function convertDMSToDD(dms, positiveDirection) {
-  const res = dms
-    .map((item, i) => {
-      return item / Math.pow(60, i);
-    })
-    .reduce((a, b) => a + b);
-  return positiveDirection ? res : -res;
-}
 
 export function transformExifToNodeData(exifData) {
   const gps = { longitude: null, latitude: null };
-
   if (
-    exifData.gps &&
-    exifData.gps.GPSLongitude &&
-    exifData.gps.GPSLatitude
+    exifData.longitude && exifData.latitude
   ) {
-    gps.longitude = convertDMSToDD(
-      exifData.gps.GPSLongitude,
-      exifData.gps.GPSLongitudeRef === 'E'
-    );
-    gps.latitude = convertDMSToDD(
-      exifData.gps.GPSLatitude,
-      exifData.gps.GPSLatitudeRef === 'N'
-    );
+    gps.longitude = exifData.longitude;
+    gps.latitude = exifData.latitude;
   }
 
   return {
     gps,
     meta: {
-      dateTaken: exifData?.exif?.DateTimeOriginal
+      dateTaken: exifData?.DateTimeOriginal,
+      keywords: exifData?.Keywords || []
+
     },
     raw: exifData
   };
