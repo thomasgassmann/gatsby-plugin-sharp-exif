@@ -3,7 +3,7 @@ name: release
 on:
   push:
     branches:
-      - master
+      - mainline
 
 jobs:
   deploy:
@@ -19,8 +19,3 @@ jobs:
 
       - name: Test
         run: yarn run test
-
-      - uses: primer/publish@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
