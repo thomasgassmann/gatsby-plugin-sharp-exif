@@ -1,5 +1,4 @@
-import { transformExifToNodeData } from "./common";
-import { extractExifData } from "./gatsby-node";
+import {extractExifData, transformExifToNodeData} from "./common";
 
 test("empty coordinates", () => {
   const input = {};
