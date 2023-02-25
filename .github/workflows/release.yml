@@ -20,7 +20,6 @@ jobs:
       - name: Test
         run: yarn run test
 
-      - uses: primer/publish@master
+      - run: yarn publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
