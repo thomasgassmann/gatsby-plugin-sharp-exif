@@ -41,6 +41,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.21.0",
-    "fast-exif": "^1.0.1"
+    "fast-exif": "^1.0.1",
+    "fast-glob": "^3.3.2",
+    "lodash": "^4.17.21"
   }
 }
